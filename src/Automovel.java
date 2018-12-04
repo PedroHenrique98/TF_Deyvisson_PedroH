@@ -4,7 +4,7 @@ public class Automovel {
 
 	private String modelo;
 
-	private int ano:int;
+	private int ano;
 
 	private String fabricante;
 
@@ -12,26 +12,25 @@ public class Automovel {
 
 	private float odometro;
 
-	private Abastecimento[] abastecimento;
-
-	public Automovel() {
-
-	}
-
 	public Automovel(String pv, String m, int a, String f, int ct, float o) {
-
+		placaVeiculo = pv;
+		modelo = m;
+		ano = a;
+		fabricante = f;
+		capTanque = ct;
+		odometro = o;
 	}
+
+	public void setPlacaVeiculo(String placa) {
+		placaVeiculo = placa;
+	}
+
+	public float setOdometro(int odo) {
+		odometro = odo;
+	}
+
 
 	public String toString() {
 		return null;
 	}
-
-	public void setPlacaVeiculo(String placa) {
-
-	}
-
-	public void setOdometro(int odo) {
-
-	}
-
 }

@@ -1,4 +1,5 @@
 public class Abastecimento {
+	private Automovel automovel;
 
 	private String tipoCombustivel;
 
@@ -13,11 +14,13 @@ public class Abastecimento {
 	private float precoTotal;
 
 	public Abastecimento(Automovel auto, String tc, float oa, float l, float pl, float pt) {
-
+		automovel = auto;
+		tipoCombustivel = tc;
+		odometroAtual = oa;
+		litros = l;
+		precoLitro = pl;
+		precoTotal = pt;
+		java.util.Date d = new Date();
+		data = java.text.DateFormat.getDateInstance(DateFormat.MEDIUM).format(d);
 	}
-
-	public Abastecimento(String pv, String tc, float oa, float l, float pl, float pt) {
-
-	}
-
 }

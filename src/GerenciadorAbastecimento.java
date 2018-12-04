@@ -1,9 +1,12 @@
 public class GerenciadorAbastecimento {
 
-	private Abastecimento[] abastecimento;
+	private List<Abastecimento> abastecimentos;
 
-	public void solicitarAbastecimento(String placa) {
+	public GerenciadorAbastcimento(){
+		abastecimentos = new ArrayList();
+	}
 
+	public void solicitarAbastecimento(Automovel auto, String tc, float l, float pl) {
 	}
 
 	public String toString() {
