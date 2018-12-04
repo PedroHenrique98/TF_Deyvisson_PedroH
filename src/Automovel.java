@@ -25,7 +25,7 @@ public class Automovel {
 		placaVeiculo = placa;
 	}
 
-	public float setOdometro(int odo) {
+	public void setOdometro(int odo) {
 		odometro = odo;
 	}
 
